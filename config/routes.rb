@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :shots
   devise_for :users, controller: { registrations: 'registrations' }
-  root "home#index"
+  root "shots#index"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
